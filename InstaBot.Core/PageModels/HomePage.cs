@@ -8,15 +8,5 @@ namespace InstaBot.Core
 {
     public sealed class HomePage: BasePage
     {
-        public IWebDriver Driver { get; private set; }
-
-        private IWebElement usernameTextBox = 
-
-        public HomePage(IWebDriver driver)
-        {
-            Driver = driver;
-        }
-
-
     }
 }

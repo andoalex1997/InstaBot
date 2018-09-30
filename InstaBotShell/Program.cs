@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using InstaBot.Core;
+using InstaBot.Core.PageModels;
 
 
 namespace InstaBotShell
@@ -12,14 +13,20 @@ namespace InstaBotShell
     class Program
     {
         static void Main(string[] args)
-        {          
-            var page = new DriverPage();
-            
-            
-            //page.LetsGo();
-            page.Enter();
-            //page.GetFollowers();
-            Console.Read();
+        {
+            CookiesManager.ReadCookies();
+            if (CookiesManager.Token == null || CookiesManager.SessonId == null)
+            {
+                var startPage = new LogInPage();
+                startPage.UsernameTb.SendKeys("");
+                startPage.PassWordTb.SendKeys("");
+            }
+            else
+            {
+                var startPage = new HomePage();
+            }
+
+
         }
     }
 }
