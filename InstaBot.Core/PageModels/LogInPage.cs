@@ -16,9 +16,11 @@ namespace InstaBot.Core.PageModels
 
         public LogInPage()
         {
+            Driver.Navigate().GoToUrl(@"https://www.instagram.com/accounts/login/?source=auth_switcher");
             UsernameTb = Driver.FindElement(By.Name("username"), 10);
             PassWordTb = Driver.FindElement(By.Name("password"), 10);
             LogInBtn = Driver.FindElement(By.CssSelector("button"), 10);
+
             //Driver.FindElement(By.Name("username")).SendKeys("andrran1k");
             //Driver.FindElement(By.Name("password")).SendKeys("And0A!ex");
             //Driver.FindElement(By.CssSelector("button")).Click();

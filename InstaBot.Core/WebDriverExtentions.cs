@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using InstaBot.Core.PageModels;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -9,6 +10,13 @@ namespace InstaBot.Core
 {
     public static class WebDriverExtentions
     {
+        /// <summary>
+        /// Extention method with timeout
+        /// </summary>
+        /// <param name="driver">Web driver</param>
+        /// <param name="by">Search param</param>
+        /// <param name="timeoutInSeconds">Timeout</param>
+        /// <returns>Web Element</returns>
         public static IWebElement FindElement(this IWebDriver driver, By by, int timeoutInSeconds)
         {
             if (timeoutInSeconds > 0)
@@ -19,6 +27,13 @@ namespace InstaBot.Core
             return driver.FindElement(by);
         }
 
+        /// <summary>
+        /// Extention method with timeout
+        /// </summary>
+        /// <param name="driver">Web driver</param>
+        /// <param name="by">Search param</param>
+        /// <param name="timeoutInSeconds">Timeout</param>
+        /// <returns>Web Element</returns>
         public static ReadOnlyCollection<IWebElement> FindElements(this IWebDriver driver, By by, int timeoutInSeconds)
         {
             if (timeoutInSeconds > 0)
@@ -28,5 +43,6 @@ namespace InstaBot.Core
             }
             return driver.FindElements(by);
         }
+
     }
 }

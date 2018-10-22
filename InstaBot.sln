@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaBotShell", "InstaBotShell\InstaBotShell.csproj", "{F74CEE92-BAB9-4778-9CA5-B9DC84324F24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaBot.Core", "InstaBot.Core\InstaBot.Core.csproj", "{684B8D40-BFEA-42D7-AC3F-30C2E24CFCAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstaBot.Core", "InstaBot.Core\InstaBot.Core.csproj", "{684B8D40-BFEA-42D7-AC3F-30C2E24CFCAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaBot.Service", "InstaBot.Service\InstaBot.Service.csproj", "{B613C3BE-81EB-4F13-9E73-AD7C18128F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaBot.DesktopApp", "InstaBot.DesktopApp\InstaBot.DesktopApp.csproj", "{7F79DD79-6954-4CAD-B362-1961EBAA4AE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{684B8D40-BFEA-42D7-AC3F-30C2E24CFCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{684B8D40-BFEA-42D7-AC3F-30C2E24CFCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{684B8D40-BFEA-42D7-AC3F-30C2E24CFCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B613C3BE-81EB-4F13-9E73-AD7C18128F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B613C3BE-81EB-4F13-9E73-AD7C18128F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B613C3BE-81EB-4F13-9E73-AD7C18128F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B613C3BE-81EB-4F13-9E73-AD7C18128F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F79DD79-6954-4CAD-B362-1961EBAA4AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F79DD79-6954-4CAD-B362-1961EBAA4AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F79DD79-6954-4CAD-B362-1961EBAA4AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F79DD79-6954-4CAD-B362-1961EBAA4AE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
